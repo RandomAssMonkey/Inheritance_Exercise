@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance_Exercise
 {
-	internal class Student: Person
+	internal class Student : Person
 	{
 		private string previousOrganization;
 		private int skippedDays;
@@ -25,6 +25,17 @@ namespace Inheritance_Exercise
 		public override string GetGoal()
 		{
 			return $"My goal is: Be a Junior software developer";
+		}
+
+		public int SkipDays(int numberOfDays)
+		{
+			skippedDays += numberOfDays;
+			return skippedDays;
+		}
+
+		public override string ToString()
+		{
+			return $"{base.ToString()} from {this.previousOrganization} who skipped {this.skippedDays} days from the course already.";
 		}
 	}
 }
