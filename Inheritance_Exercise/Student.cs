@@ -21,5 +21,10 @@ namespace Inheritance_Exercise
 			this.previousOrganization = "School of Life";
 			this.skippedDays = 0;
 		}
+
+		public override string GetGoal()
+		{
+			return $"My goal is: Be a Junior software developer";
+		}
 	}
 }

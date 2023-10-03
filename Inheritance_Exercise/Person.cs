@@ -30,7 +30,7 @@ namespace Inheritance_Exercise
 			this.gender = "croissant";
 		}
 
-		public string GetGoal()
+		public virtual string GetGoal()
 		{
 			return "My goal is: Live for the moment";
 		}
