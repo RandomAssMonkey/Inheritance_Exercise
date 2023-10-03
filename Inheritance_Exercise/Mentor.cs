@@ -17,7 +17,7 @@ namespace Inheritance_Exercise
 			this.level = level;
 		}
 
-		public Mentor():base("Jane Doe", 30, "Female")
+		public Mentor():base("Jane Doe", 30, "croissant")
 		{
 			this.level = "intermediate";
 		}
